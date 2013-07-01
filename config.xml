@@ -5,7 +5,7 @@
         id        = "com.getSolution.getAfin"
         version   = "1.0.0">
 
-    <name>Fre</name>
+    <name>getAfin</name>
 
     <description>
         App que cifra y descifra en metodo Afin
