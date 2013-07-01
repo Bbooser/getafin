@@ -9,10 +9,10 @@
  
 <body> 
  
-<div data-role="page" id="inicio">
+<div data-role="page" id="inicio" data-theme="c">
  
 	<div data-role="header">
-		<h1>Autenticacion de Usuario</h1>
+		<h1>Autenticaci&oacute;n de Usuario</h1>
 	</div>
     
 	<div data-role="content">	
@@ -53,7 +53,7 @@ $('#formulario').submit(function() {
 	var datosUsuario = $("#nombredeusuario").val()
 	var datosPassword = $("#clave").val()
 	
-  	archivoValidacion = "http://getafin.net16.net/login.php"
+  	archivoValidacion = "http://getafin.net16.net/login.php?jsoncallback=?"
  
 	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
 	.done(function(respuestaServer) {
@@ -67,7 +67,7 @@ $('#formulario').submit(function() {
 		  
 		}else{
 		  
-		  /// ejecutar una conducta cuando la validacion falla
+		  alert("Usuario o Password Invalidos")
 		}
   
 	})
